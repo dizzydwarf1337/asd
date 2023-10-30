@@ -1,0 +1,27 @@
+ public static void Triangle( int n)
+    {
+        int nums;
+        int i = 1;
+        int gwiazdka=1;
+        for (; n > 0;n--)
+        {
+            i = gwiazdka;
+            nums = n + n - 1;
+            for (int j = nums/2;j>0;j-- )
+            {
+                Console.Write(" ");
+                nums--;
+            }
+            for (; i > 0; i--)
+            {
+                Console.Write("*");
+            }
+            for (int j=nums/2;j>0;j--)
+            {
+                Console.Write(" ");
+                nums--;
+            }
+            Console.WriteLine();
+            gwiazdka += 2;
+        }
+    }
